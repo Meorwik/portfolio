@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Илья - Backend Developer</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4e1d7d, #2e0b4d);
+            color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            justify-content: center;
+        }
+        .card {
+            background-color: #282046;
+            width: 90%;
+            max-width: 600px;
+            padding: 25px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #e6e6ff;
+        }
+        .subtitle {
+            color: #b3a6ff;
+            font-size: 1.2em;
+            margin-top: -8px;
+            margin-bottom: 20px;
+        }
+        .description {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        /* Навыки */
+        .skills {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .skills h2 {
+            color: #e6e6ff;
+            margin-bottom: 10px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            background-color: #6a4bb1;
+            color: #f4f4f9;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        /* Контакты */
+        .contacts a {
+            color: #b3a6ff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .contacts a:hover {
+            color: #f4f4f9;
+        }
+        /* Проекты */
+        .projects {
+            margin: 20px 0;
+            text-align: left;
+        }
+        .projects h2 {
+            color: #e6e6ff;
+            margin-bottom: 10px;
+        }
+        .project-card {
+            background-color: #3b2969;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.03);
+        }
+        .project-card a {
+            color: #b3a6ff;
+            text-decoration: none;
+        }
+        /* Кнопка */
+        .contact-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #6a4bb1;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .contact-btn:hover {
+            background-color: #4e1d7d;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Илья</h1>
+        <p class="subtitle">Future Backend Developer</p>
+        <p class="description">Привет! Меня зовут Илья, я начинающий разработчик из Казахстана. Работаю над первым проектом — сайтом-портфолио.</p>
+
+        <div class="skills">
+            <h2>Stack</h2>
+            <ul>
+                <li>Python</li>
+                <li>FastAPI</li>
+                <li>SQLAlchemy</li>
+                <li>PostgreSQL</li>
+                <li>Redis</li>
+            </ul>
+        </div>
+
+        <div class="projects">
+            <h2>Проекты</h2>
+            <div class="project-card">
+                <h3>Портфолио-сайт</h3>
+                <p>Разработка портфолио-сайта с использованием FastAPI и Alembic. Отслеживаю прогресс, чтобы сравнить навыки со временем.</p>
+                <a href="#">Подробнее</a>
+            </div>
+        </div>
+
+        <div class="contacts">
+            <p>Свяжитесь со мной:</p>
+            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://t.me/yourprofile" target="_blank">Telegram</a>
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+        </div>
+        <a href="mailto:your.email@example.com" class="contact-btn">Написать мне</a>
+    </div>
+</body>
+</html>
